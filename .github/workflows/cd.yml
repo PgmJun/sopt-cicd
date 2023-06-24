@@ -91,7 +91,7 @@ jobs:
       run:
         aws deploy create-deployment 
         --application-name sopt-server-codedeploy
-        --deployment-group-name sopt-server-codedeploy-group
+        --deployment-group-name sopt-server_codedeploy_group
         --file-exists-behavior OVERWRITE 
-        --s3-location bucket=sopt32-seminar,bundleType=zip,key=sopt_server.zip
+        --s3-location bucket=csj-sopt32-seminar,bundleType=zip,key=sopt_server.zip
         --region ap-northeast-2
